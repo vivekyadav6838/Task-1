@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Accessories Installation Request Form</title>
+    <!-- Include CSS for styling -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Car Accessories Installation Request Form</h1>
+    <form id="accessoryForm" action="process_form.php" method="post">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <label for="carModel">Car Model Name:</label>
+        <input type="text" id="carModel" name="carModel" required><br>
+
+        <label>Accessories:</label><br>
+        <input type="checkbox" name="accessories[]" value="Floor Mats"> Floor Mats<br>
+        <input type="checkbox" name="accessories[]" value="Roof Racks and Carriers"> Roof Racks and Carriers<br>
+        <input type="checkbox" name="accessories[]" value="Audi Genuine Wheels and Rims"> Audi Genuine Wheels and Rims<br>
+        <input type="checkbox" name="accessories[]" value="Audi Key Covers"> Audi Key Covers<br>
+        <input type="checkbox" name="accessories[]" value="Audi Valve Stem Caps"> Audi Valve Stem Caps<br>
+        <input type="checkbox" name="accessories[]" value="Audi Rings License Plate Frame"> Audi Rings License Plate Frame<br>
+
+        <label>Car Variant:</label><br>
+        <input type="radio" name="carVariant" value="Petrol" required> Petrol<br>
+        <input type="radio" name="carVariant" value="Diesel" required> Diesel<br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Include JavaScript for form validation -->
+    <script src="validation.js"></script>
+</body>
+</html>
